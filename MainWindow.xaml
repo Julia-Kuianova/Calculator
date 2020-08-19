@@ -1,0 +1,103 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid Background="#FF99D1BF" Width="500" Height="450">
+        <TextBlock x:Name="text_box" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="472" Background="#FFFDFDFD" FontSize="36" FontWeight="Bold" Foreground="#FF1D6865" TextAlignment="Right"/>
+        <Button x:Name="One" Content="1" Margin="10,109,400,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="One_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Two" Content="2" Margin="110,109,300,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Two_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Three" Content="3" Margin="210,109,200,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Three_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Four" Content="4" Margin="10,187,400,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Four_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Five" Content="5" Margin="110,187,300,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Five_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Six" Content="6" Margin="210,187,200,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Six_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Seven" Content="7" Margin="10,264,400,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Seven_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Eight" Content="8" Margin="110,264,300,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Eight_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Nine" Content="9" Margin="210,264,200,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Nine_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Zero" Content="0" Margin="10,344,400,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Zero_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Double_zero" Content="00" Margin="110,344,300,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Double_zero_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Point" Content="," Margin="210,344,200,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Point_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Plus" Content="+" Margin="320,109,111,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Plus_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Minus" Content="-" Margin="402,109,29,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Minus_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Multiplication" Content="*" Margin="320,187,111,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Multiplication_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Division" Content="/" Margin="402,187,29,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Division_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Equality" Content="=" Margin="320,264,29,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Equality_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Clear" Content="C" Margin="320,344,29,0" VerticalAlignment="Top" Height="57" IsCancel="True" FontSize="36" Background="#FF6FE0BC" FontWeight="Bold" Click="Clear_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
